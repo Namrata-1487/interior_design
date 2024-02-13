@@ -2,55 +2,103 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Interior Design Website</title>
+    <title>Interior Designer</title>
 </head>
 
-<body>
-    <!-- Nav tabs -->
-    <ul class="nav nav-tabs" id="navId" role="tablist">
-        <li class="nav-item">
-            <a href="#tab1Id" class="nav-link active" data-bs-toggle="tab" aria-current="page">Active</a>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-                aria-expanded="false">Dropdown</a>
-            <div class="dropdown-menu">
-                <a class="dropdown-item" href="#tab2Id">Action</a>
-                <a class="dropdown-item" href="#tab3Id">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#tab4Id">Action</a>
+<body class="container-fluid p-0">
+    <div class="background d-flex row">
+        <header class="container-fluid p-0">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container ">
+                    <a class="navbar-brand fs-1 fw-bold" href="./index.html" target="_blank">INTERIOR</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse d-lg-flex justify-content-lg-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link text-white px-4 active" aria-current="page" href="#">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white px-4" href="#">BEDROOM</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white px-4" href="#">DINING</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white px-4" href="#">KITCHEN</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white px-4" href="#">CONTACT</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="d-block m-auto mt-0 p-3 w-50">
+            <div class="maincontent p-3 d-flex justify-content-center flex-column align-items-center text-center p-0">
+                <h1 class="text-light ">DESIGN YOUR HOUSE</h1>
+                <p class="fs-4 text-light w-100">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint
+                    deserunt
+                    esse
+                    nihil dolorem obcaecati, ea
+                    commodi aut libero maiores eaque dicta quae eveniet laudantium veniam eum delectus, ratione corporis
+                    inventore?</p>
             </div>
-        </li>
-        <li class="nav-item" role="presentation">
-            <a href="#tab5Id" class="nav-link" data-bs-toggle="tab">Another link</a>
-        </li>
-        <li class="nav-item" role="presentation">
-            <a href="#" class="nav-link disabled" data-bs-toggle="tab">Disabled</a>
-        </li>
-    </ul>
+            <!-- button list -->
+            <div class="buttton-group">
+                <button type="button" class="btn" data-bs-toggle="button" aria-pressed="false" autocomplete="off">
+                    Sample Designs
+                </button>
+                <button type="button" class="btn" data-bs-toggle="button" aria-pressed="false" autocomplete="off">
+                    Customization
+                </button>
+            </div>
 
-    <!-- Tab panes -->
-    <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade show active" id="tab1Id" role="tabpanel">
 
-        </div>
-        <div class="tab-pane fade" id="tab2Id" role="tabpanel"></div>
-        <div class="tab-pane fade" id="tab3Id" role="tabpanel"></div>
-        <div class="tab-pane fade" id="tab4Id" role="tabpanel"></div>
-        <div class="tab-pane fade" id="tab5Id" role="tabpanel"></div>
+
+        </main>
     </div>
+    <footer class="container-fluid p-5 bg-light row">
+        <div class="col-6 m-auto text-center">
+            <h1 class="text-dark fw-bold ">INTERIOR <br> DESIGN</h1>
+        </div>
+        <div class="col-3 ">
+            <ul>
+                <li class="list-group-item border-0 bg-light"><a href="#"
+                        class="text-decoration-none text-dark fs-5 m-0 p-0 fw-bold">Home</a>
+                </li>
+                <li class="list-group-item border-0 bg-light"><a href="#"
+                        class="text-decoration-none text-dark fs-5 m-0 p-0 fw-bold">Bedroom</a>
+                </li>
+                <li class="list-group-item border-0 bg-light"><a href="#"
+                        class="text-decoration-none text-dark fs-5 m-0 p-0 fw-bold">Dinning</a>
+                </li>
+            </ul>
+        </div>
 
-    <!-- (Optional) - Place this js code after initializing bootstrap.min.js or bootstrap.bundle.min.js -->
-    <script>
-        var triggerEl = document.querySelector("#navId a");
-        bootstrap.Tab.getInstance(triggerEl).show(); // Select tab by name
-    </script>
+        <div class="col-3">
+            <ul>
+                <li class="list-group-item border-0 bg-light"><a href="#"
+                        class="text-decoration-none text-dark fs-5 m-0 p-0 fw-bold">Kitchen</a>
+                </li>
+                <li class="list-group-item border-0 bg-light"><a href="#"
+                        class="text-decoration-none text-dark fs-5 m-0 p-0 fw-bold">Contact</a>
+                </li>
+            </ul>
+        </div>
 
-    <!-- scriptng for bootstrap -->
+    </footer>
+
+    <!-- bootstrap scripting -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
