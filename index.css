@@ -19,9 +19,12 @@ header {
 .navbar {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  background-color: black;
+  /* background-color: black; */
 }
-
+.scrolled {
+  background-color: black;
+  transition: 0.8s ease-in-out;
+}
 .nav-link {
   font-size: x-large;
   font-weight: bolder;
