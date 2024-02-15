@@ -7,13 +7,15 @@
     <link rel="stylesheet" href="index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.php">
+    <link rel="stylesheet" href="index.js">
     <title>Interior Designer</title>
 </head>
 
 <body class="container-fluid p-0">
     <div class="background d-flex row">
-        <header class="container-fluid p-0">
-            <nav class="navbar navbar-expand-lg navbar-dark">
+        <header class="container-fluid p-0 fixed-top">
+            <nav class="navbar navbar-expand-lg navbar-dark" onscroll="backgroundcolor()">
                 <div class="container ">
                     <a class="navbar-brand fs-1 fw-bold" href="./index.html" target="_blank">INTERIOR</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -43,7 +45,7 @@
                 </div>
             </nav>
         </header>
-        <main class="d-block m-auto mt-0 p-3 w-50">
+        <div id="main1" class="d-block m-auto p-3 w-50">
             <div class="maincontent p-3 d-flex justify-content-center flex-column align-items-center text-center p-0">
                 <h1 class="text-light ">DESIGN YOUR HOUSE</h1>
                 <p class="fs-4 text-light w-100">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint
@@ -54,49 +56,196 @@
                     inventore?</p>
             </div>
             <!-- button list -->
-            <div class="buttton-group">
-                <button type="button" class="btn" data-bs-toggle="button" aria-pressed="false" autocomplete="off">
-                    Sample Designs
+            <div class="buttton-group my-5 d-flex justify-content-evenly">
+                <button type="submit" class="btn btn-light fw-bold rounded-pill" data-bs-toggle="#homeint"
+                    aria-pressed="false" autocomplete="off">
+                    <a href="#homeint" class="text-decoration-none text-dark">
+                        Sample Designs
+                    </a>
                 </button>
-                <button type="button" class="btn" data-bs-toggle="button" aria-pressed="false" autocomplete="off">
-                    Customization
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                    Connect
                 </button>
             </div>
-
-
-
-        </main>
+        </div>
     </div>
-    <footer class="container-fluid p-5 bg-light row">
-        <div class="col-6 m-auto text-center">
-            <h1 class="text-dark fw-bold ">INTERIOR <br> DESIGN</h1>
+    <div id="homeint" name="homeint" class="container mb-5">
+        <h1 class="text-center my-5 fw-bold">Design Samples</h1>
+        <div class="row m-auto mb-5 text-center">
+            <div class="col-4">
+                <div class="flip-card d-block">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front ">
+                            <img src="./home-interior1.jpg" class="img-fluid " alt="home1">
+                        </div>
+                        <div
+                            class="flip-card-back m-auto text-center d-flex row justify-content-center align-content-center w-100">
+                            <h5 class="w-75">We can create it</h5>
+                            <p>Furniture/interior</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front ">
+                            <img src="./home-interior2.jpg" class="img-fluid " alt="home2">
+                        </div>
+                        <div
+                            class="flip-card-back m-auto text-center d-flex row justify-content-center align-content-center w-100">
+                            <h5 class="w-75">Modern interior design</h5>
+                            <p>Architecture/Interior</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front ">
+                            <img src="./home-interior3.jpg" class="img-fluid " alt="home3">
+                        </div>
+                        <div
+                            class="flip-card-back m-auto text-center d-flex row justify-content-center align-content-center w-100">
+                            <h5 class="w-75">Stylish Interior Design </h5>
+                            <p>Design/Interior</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
-        <div class="col-3 ">
-            <ul>
-                <li class="list-group-item border-0 bg-light"><a href="#"
-                        class="text-decoration-none text-dark fs-5 m-0 p-0 fw-bold">Home</a>
-                </li>
-                <li class="list-group-item border-0 bg-light"><a href="#"
-                        class="text-decoration-none text-dark fs-5 m-0 p-0 fw-bold">Bedroom</a>
-                </li>
-                <li class="list-group-item border-0 bg-light"><a href="#"
-                        class="text-decoration-none text-dark fs-5 m-0 p-0 fw-bold">Dinning</a>
-                </li>
-            </ul>
+        <div class="row m-auto text-center">
+            <div class="col-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front ">
+                            <img src="./home-interior1.jpg" class="img-fluid " alt="home1">
+                        </div>
+                        <div
+                            class="flip-card-back m-auto text-center d-flex row justify-content-center align-content-center w-100">
+                            <h5 class="w-75">Your living space</h5>
+                            <p>Architecture/Interior</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front ">
+                            <img src="./home-interior2.jpg" class="img-fluid " alt="home2">
+                        </div>
+                        <div
+                            class="flip-card-back m-auto text-center d-flex row justify-content-center align-content-center w-100">
+                            <h5 class="w-75">Awesome Living Room</h5>
+                            <p>Furniture/Interior</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front ">
+                            <img src="./home-interior3.jpg" class="img-fluid " alt="home3">
+                        </div>
+                        <div
+                            class="flip-card-back m-auto text-center d-flex row justify-content-center align-content-center w-100">
+                            <h5 class="w-75">Decore your home</h5>
+                            <p>Furniture/Interior</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid my-5 text-center" id="count">
+        <div class="container px-5 d-flex">
+            <div class="col">
+                <h1 id="cont1">000</h1>
+                <p>completed projects </p>
+            </div>
+            <div class="col">
+                <h1 id="count2">000</h1>
+                <p>completed projects </p>
+            </div>
+            <div class="col">
+                <h1 id="count3">000</h1>
+                <p>completed projects </p>
+            </div>
+            <div class="col">
+                <h1 id="count4">000</h1>
+                <p>completed projects </p>
+            </div>
+
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container m-auto d-flex justify-content-center row w-50">
+            <div class="modal" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <form action="./index.php" class="" method=" post" id="connect">
+
+                            <label for="fname">First name:</label><br>
+                            <input type="text" id="fname" name="fname" value="John"><br>
+                            <label for="lname">Last name:</label><br>
+                            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                            <input type="submit" value="Submit">
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
-        <div class="col-3">
-            <ul>
-                <li class="list-group-item border-0 bg-light"><a href="#"
-                        class="text-decoration-none text-dark fs-5 m-0 p-0 fw-bold">Kitchen</a>
-                </li>
-                <li class="list-group-item border-0 bg-light"><a href="#"
-                        class="text-decoration-none text-dark fs-5 m-0 p-0 fw-bold">Contact</a>
-                </li>
-            </ul>
-        </div>
+    </div>
 
+    <footer class="row">
+        <div class="container-fluid p-5 bg-light row">
+            <div class="col-4 m-auto text-center">
+                <h3 class="text-dark fw-bold ">INTERIOR <br> DESIGN</h3>
+            </div>
+            <div class="col-2 ">
+                <ul>
+                    <li class="list-group-item border-0 bg-light"><a href="#"
+                            class="text-decoration-none text-dark fs-6 m-0 p-0 ">Home</a>
+                    </li>
+                    <li class="list-group-item border-0 bg-light"><a href="#"
+                            class="text-decoration-none text-dark fs-6 m-0 p-0 ">Bedroom</a>
+                    </li>
+                    <li class="list-group-item border-0 bg-light"><a href="#"
+                            class="text-decoration-none text-dark fs-6 m-0 p-0 ">Dinning</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-2">
+                <ul>
+                    <li class="list-group-item border-0 bg-light"><a href="#"
+                            class="text-decoration-none text-dark fs-6 m-0 p-0 ">Kitchen</a>
+                    </li>
+                    <li class="list-group-item border-0 bg-light"><a href="#"
+                            class="text-decoration-none text-dark fs-6 m-0 p-0 ">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-2">
+
+            </div>
+        </div>
     </footer>
+  
 
     <!-- bootstrap scripting -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
