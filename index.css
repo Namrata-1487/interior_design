@@ -47,7 +47,7 @@ h1 {
 
 .flip-card {
   background-color: transparent;
-  height: 230px;
+  height: 225px;
   perspective: 1000px;
   cursor: pointer;
 }
@@ -59,11 +59,11 @@ h1 {
   text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
+  transition: ease-in-out 1s;
 }
 
 .flip-card-front,
@@ -72,6 +72,12 @@ h1 {
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  box-shadow: 0 4px 8px 0 rgba(2, 2, 2, 0.2);
+  border-radius: 10px;
+}
+.flip-card-front img {
+  border-radius: 10px;
+  object-fit: contain;
 }
 
 .flip-card-back {
