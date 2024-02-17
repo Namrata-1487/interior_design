@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  overflow-x: hidden;
+  height: 100vh;
 }
 .background {
   background-image: url("./background-2.jpg");
@@ -83,10 +83,10 @@ h1 {
   transform: rotateY(180deg);
   background-color: skyblue;
 }
-@media screen and (min-width: 576px) {
+@media screen and (max-width: 576px) {
   .flip-card {
     background-color: transparent;
-    height: auto;
+    height: 100px;
     perspective: 1000px;
     cursor: pointer;
   }
