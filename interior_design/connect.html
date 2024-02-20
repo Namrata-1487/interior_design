@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.php">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Connect</title>
+</head>
+
+<body class="container-fluid p-0 m-auto " id="connect">
+    <header class="container-fluid  p-0 ">
+        <nav class="navbar container-fluid  navbar-expand-lg navbar-dark fixed-top scrolled">
+            <div class="container-lg container-fluid ">
+                <a class="navbar-brand fs-1 fw-bold" href="./index.html" target="_blank">INTERIOR</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-lg-flex justify-content-lg-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-white px-4 active" aria-current="page" href="./index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white px-4" href="./bedroom.html">BEDROOM</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white px-4" href="./dinning.html">DINING</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white px-4" href="./kitchen.html"> KITCHEN </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white px-4" href="./connect.html">CONTACT</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <form action="./index.php" method="get" class="w-50 m-auto py-5 bg-dark text-white">
+            <h5 class="text-uppercase text-light px-5">personal details</h5>
+            <div class="d-flex row w-75 m-auto">
+                <div class=" col-6 m-auto pb-3 p-0 pe-3">
+                    <label for="fname" class="form-label">First Name</label>
+                    <input type="text" class="form-control" name="fname" id="" aria-describedby="helpId"
+                        placeholder="Enter first name" required>
+                </div>
+                <div class="col-6 m-auto pb-3 p-0 ">
+                    <label for="Lname" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" name="lname" id="" aria-describedby="helpId"
+                        placeholder="Enter last name" required />
+                </div>
+            </div>
+            <div class=" w-75 m-auto">
+                <label for="mail" class="form-label">Email</label>
+                <input type="email" class="form-control" name="email" id="" aria-describedby="emailHelpId"
+                    placeholder="abc@mail.com" required />
+            </div>
+            <br>
+            <h5 class="text-uppercase text-light px-5">project details </h5>
+            <div class=" w-75 m-auto pb-3">
+                <label for="Lname" class="form-label">Type of Project</label>
+                <input type="text" class="form-control" name="typeofproject" id="typeofproject"
+                    aria-describedby="helpId" placeholder="Enter type of project" required />
+
+            </div>
+            <div class=" w-75 m-auto pb-3">
+                <label for="Lname" class="form-label">Project Location</label>
+                <input type="text" class="form-control" name="location" id="typeofproject" aria-describedby="helpId"
+                    placeholder="Enter location of project" required />
+            </div>
+            <div class=" w-75 m-auto pb-3">
+                <label for="Lname" class="form-label">Project Timeline</label>
+                <input type="text" class="form-control" name="timeline" id="typeofproject" aria-describedby="helpId"
+                    placeholder="Enter Project Timeline" required />
+            </div>
+            <h5 class="text-uppercase text-light px-5">Design Preferences</h5>
+            <div class="designprefer d-flex row  px-5">
+                <div class="m-auto pb-3 col-6">
+                    <h5>Select color preferences</h5>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="color" id="" />
+                        <!-- Modern / Traditional / Contemporary / Transitional / Eclectic / Other -->
+                        <label class="form-check-label" for=""> Modern </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="color" id="" />
+                        <label class="form-check-label" for="">
+                            Traditional
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="color" id="" />
+                        <label class="form-check-label" for="">
+                            Contemporary
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="color" id="" />
+                        <label class="form-check-label" for="">
+                            Transitional
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="color" id="" />
+                        <label class="form-check-label" for="">
+                            Eclectic
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="color" id="" />
+                        <label class="form-check-label" for="">
+                            Other
+                        </label>
+                    </div>
+                </div>
+                <div class="colorscheme col-6">
+                    <div class="mb-3">
+                        <label for="" class="form-label">Color scheme</label>
+                        <!-- <input type="color" class="form-control" name="" id="colorscheme" aria-describedby="helpId"
+                            placeholder="" /> -->
+                        <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br><br>
+                    </div>
+                    <div class="mb-3">
+                        <label for="" class="form-label">Room(s) to be Designed</label>
+                        <select class="form-select form-select-md" name="" id="">
+                            <!-- Living Room / Bedroom / Kitchen / Bathroom / Office / Entire Home / Other -->
+                            <option selected>Living Room</option>
+                            <option value="">Bedroom</option>
+                            <option value="">Kitchen</option>
+                            <option value="">Bathroom</option>
+                            <option value="">Office</option>
+                            <option value="">Entire Home </option>
+                            <option value="">Other</option>
+                        </select>
+                    </div>
+
+                </div>
+            </div>
+            <div class="submit m-auto text-center">
+                <button type="submit" class="btn btn-primary">
+                    Submit
+                </button>
+            </div>
+
+        </form>
+    </main>
+    <br>
+
+
+    <footer class="row container-fluid p-0 bg-secondary m-auto">
+        <div class="container m-auto p-3 w-75 row">
+            <div class="col-3 m-auto text-start">
+                <h3 class="text-white fw-bold ">INTERIOR <br> DESIGN</h3>
+            </div>
+            <div class="col-3 m-auto ">
+                <ul>
+                    <li class="list-group-item border-0 bg-secondary"><a href="#"
+                            class="text-decoration-none text-white fs-6 m-0 p-0 ">Home</a>
+                    </li>
+                    <li class="list-group-item border-0 bg-secondary"><a href="#"
+                            class="text-decoration-none text-white fs-6 m-0 p-0 ">Bedroom</a>
+                    </li>
+                    <li class="list-group-item border-0 bg-secondary"><a href="#"
+                            class="text-decoration-none text-white fs-6 m-0 p-0 ">Dinning</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-3 m-auto">
+                <ul>
+                    <li class="list-group-item border-0 bg-secondary"><a href="#"
+                            class="text-decoration-none text-white fs-6 m-0 p-0 ">Kitchen</a>
+                    </li>
+                    <li class="list-group-item border-0 bg-secondary"><a href="#"
+                            class="text-decoration-none text-white fs-6 m-0 p-0 ">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-3 m-auto">
+                <h4 class="text-white ps-5">Follow us</h4>
+                <div class="list-group flex-row">
+                    <li class="text-decoration-none list-group-item bg-secondary border-0"><a href="#"
+                            class="text-white"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li class="text-decoration-none list-group-item bg-secondary border-0"><a href="#"
+                            class="text-white"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li class="text-decoration-none list-group-item bg-secondary border-0"><a href="#"
+                            class="text-white"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li class="text-decoration-none list-group-item bg-secondary border-0"><a href="#"
+                            class="text-white"><i class="fa-brands fa-youtube"></i></a></li>
+                </div>
+            </div>
+        </div>
+        <div class="container m-auto pb-5 row align-items-center">
+            <div class="col-6 m-auto d-flex justify-content-center text-center">
+                <p class="text-white m-0">&copy; Interior design company. All Rights Reserved.</p>
+            </div>
+            <div class="col-6 ">
+                <div class=" terms-pages d-flex justify-content-evenly">
+                    <a class="text-white text-decoration-none" href="#">Terms and conditions</a>
+                    <a class="text-white text-decoration-none" href="#">Cookies Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- bootstrap scripting -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script src="./index.js"></script>
+
+</body>
+
+</html>
