@@ -1,0 +1,169 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+#home .background {
+  background-image: url("./background-2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+header {
+  max-height: fit-content;
+  transition: black 1s ease-in-out;
+}
+
+#home .navbar {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.scrolled {
+  background-color: black;
+  transition: 0.8s ease-in-out;
+}
+
+.nav-link {
+  font-size: x-large;
+  font-weight: bolder;
+}
+
+#main1 {
+  min-height: 100%;
+}
+
+h1 {
+  font-size: 50px !important;
+  font-weight: bolder;
+}
+
+#home .maincontent {
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+}
+
+.buttton-group .btn:hover {
+  box-shadow: gray 0px 0px 10px 5px;
+}
+
+/* flip card css */
+
+.flip-card {
+  background-color: transparent;
+  height: 225px;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.flip-card-inner {
+  position: relative;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+  transition: ease-in-out 2s;
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  box-shadow: 0 4px 8px 0 rgba(2, 2, 2, 0.2);
+  border-radius: 10px;
+}
+
+.flip-card-front img {
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.flip-card-back {
+  color: black;
+  transform: rotateY(180deg);
+  background-color: skyblue;
+}
+
+@media screen and (max-width: 576px) {
+  .flip-card {
+    background-color: transparent;
+    height: 100px;
+    perspective: 1000px;
+    cursor: pointer;
+  }
+}
+
+#connect {
+  background-image: url(./connectpageimage.jpg);
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+#connect header {
+  min-height: fit-content;
+  height: 100px;
+}
+
+/*
+#home,
+#dinning,
+#bedroom,
+#connect {
+  background-color: black;
+  color: white;
+} */
+form {
+  border-radius: 30px;
+}
+
+#bedroom .background {
+  background-image: url("./bedroom.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+#bedroom #main1,
+#dinning #main1,
+#kitchen #main1 {
+  background-color: rgba(10, 0, 0, 0.747);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  border-radius: 50px;
+}
+
+#bedroom .navbar,
+#dinning .navbar,
+#kitchen .navbar {
+  background-color: black;
+}
+
+#dinning .background {
+  background-image: url("./dinning.avif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+#kitchen .background {
+  background-image: url("./kitchen.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
